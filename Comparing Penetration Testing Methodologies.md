@@ -4,18 +4,18 @@
 Cisco Ethical Hacker – Module 1.2.6
 
 ## Objective
-To understand and compare common penetration testing methodologies and identify their purpose, structure, and use cases in real-world security assessments.
+The goal of this lab was to explore different penetration testing methodologies and understand how each framework is used in real-world security assessments.
 
 ---
 
-## Methodologies Compared
+# Methodologies Compared
 
-### 1. PTES (Penetration Testing Execution Standard)
+## 1. PTES (Penetration Testing Execution Standard)
 
-**Purpose:**
-Defines a structured lifecycle for penetration testing engagements.
+### Overview
+PTES is a widely used framework that helps penetration testers follow a structured process during security assessments. It covers everything from planning the engagement to delivering the final report.
 
-**Phases:**
+### Main Phases
 - Pre-engagement interactions
 - Intelligence gathering
 - Threat modeling
@@ -24,77 +24,95 @@ Defines a structured lifecycle for penetration testing engagements.
 - Post-exploitation
 - Reporting
 
-**Key Characteristics:**
-- End-to-end pentesting framework
-- Focuses on real-world attack simulation
-- Strong emphasis on reporting and business impact
+### Key Points
+- Covers the complete penetration testing process
+- Simulates realistic attack scenarios
+- Focuses heavily on documentation and reporting
+- Commonly used by professional pentesters
+
+### My Understanding
+PTES feels like a complete roadmap for penetration testing. Instead of randomly attacking systems, it provides a step-by-step structure that keeps the assessment organized and professional.
 
 ---
 
-### 2. OWASP Testing Guide
+## 2. OWASP Web Security Testing Guide (WSTG)
 
-**Purpose:**
-Focused specifically on **web application security testing**.
+### Overview
+OWASP WSTG focuses mainly on testing the security of web applications. It provides practical testing techniques and checklists for finding common web vulnerabilities.
 
-**Coverage:**
-- Input validation testing
+### Areas Covered
+- Input validation
 - Authentication testing
 - Session management
-- Authorization checks
+- Authorization testing
 - Security misconfigurations
+- Client-side security
 
-**Key Characteristics:**
-- Web application focused
-- Widely used in bug bounty programs
-- Practical test cases and checklists
+### Key Points
+- Specifically designed for web application testing
+- Very useful for bug bounty and web security work
+- Includes practical examples and testing procedures
+- Frequently updated by the security community
 
----
-
-### 3. OSSTMM
-
-**Purpose:**
-Provides technical guidance for planning and conducting security tests and audits.
-
-**Coverage:**
-- Security testing techniques
-- Vulnerability scanning
-- Penetration testing methodology
-- Security assessment planning
-
-**Key Characteristics:**
-- Government/enterprise standard
-- More formal and documentation-heavy
-- Used in compliance-driven environments
+### My Understanding
+OWASP WSTG is very practical and easier to follow when working with websites and web applications. It seems especially useful for beginners interested in web security and bug bounty hunting.
 
 ---
 
-## Comparison Summary
+## 3. OSSTMM (Open Source Security Testing Methodology Manual)
 
-| Feature / Framework | PTES | OWASP | NIST SP 800-115 |
-|--------------------|------|-------|------------------|
-| Scope | Full pentest lifecycle | Web applications | Security assessments |
-| Structure | Highly structured | Checklist-based | Formal guidelines |
-| Use Case | Real-world attacks | Web security testing | Compliance & audits |
-| Detail Level | High | Medium | High (theoretical) |
+### Overview
+OSSTMM is a broader security testing methodology that goes beyond traditional penetration testing. It focuses on measuring operational security across different environments.
 
----
+### Areas Covered
+- Network security
+- Wireless security
+- Physical security
+- Telecommunications
+- Human security
 
-## Key Observations
+### Key Points
+- Covers multiple types of security testing
+- Includes both technical and non-technical environments
+- More measurement and analysis focused
+- Useful for large-scale security assessments
 
-- PTES is the most complete framework for full penetration testing engagements.
-- OWASP is more practical for web application security testing.
-- NIST is more suitable for organizations needing compliance and standardized procedures.
-
----
-
-## What I Learned
-
-- Penetration testing is not just exploitation; it follows a structured lifecycle.
-- Different frameworks exist depending on the scope (web, enterprise, compliance).
-- Real-world pentesting combines multiple methodologies depending on engagement type.
+### My Understanding
+OSSTMM appears more formal and analytical compared to the other methodologies. I noticed that it focuses not only on finding vulnerabilities but also on measuring overall security effectiveness.
 
 ---
 
-## Conclusion
+# Comparison Summary
 
-Understanding multiple penetration testing methodologies is essential for adapting to different security assessment environments. PTES provides a full lifecycle model, OWASP focuses on web security, and NIST ensures structured compliance-driven testing.
+| Feature | PTES | OWASP WSTG | OSSTMM |
+|---|---|---|---|
+| Main Focus | Full penetration testing lifecycle | Web application security | Operational security testing |
+| Scope | General pentesting | Web applications | Multiple environments |
+| Style | Structured process | Checklist-based | Measurement-oriented |
+| Common Use | Professional pentests | Web security testing | Security audits and analysis |
+
+---
+
+# Key Observations
+
+- PTES provides a very organized approach for complete penetration testing engagements.
+- OWASP WSTG is more specialized for web application testing.
+- OSSTMM covers a wider range of security areas, including physical and operational security.
+- Each methodology has different strengths depending on the assessment requirements.
+
+---
+
+# What I Learned
+
+From this lab, I learned that penetration testing is much more structured than I originally thought. Different frameworks are designed for different situations, and choosing the right methodology depends on the target environment and assessment goals.
+
+I also learned that:
+- Web application testing requires specialized techniques
+- Reporting and documentation are important parts of pentesting
+- Security assessments can include physical, wireless, and human-related factors in addition to technical vulnerabilities
+
+---
+
+# Conclusion
+
+This lab helped me understand the importance of using structured methodologies in penetration testing. PTES provides a complete pentesting workflow, OWASP WSTG focuses on web application security, and OSSTMM offers a broader operational security perspective. Learning these methodologies gave me a better understanding of how professional security assessments are planned and conducted.
